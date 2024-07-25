@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Praroz</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h3>PraRoz</h3>
+        <span>🌎</span>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-btn">Service</a>
+          <div class="dropdown-cont">
+            <a href="#">HTML CLASS</a>
+            <a href="#">CSS CLASS</a>
+            <a href="#">JAVASCRIPT CLASS</a>
+          </div>
+        </div>
+        <a href="#">Design</a>
+        <a href="#">Contact</a>
+        <form class="form-nav" action="#">
+          <input type="text" placeholder="Type to Search" />
+          <button>Submit</button>
+        </form>
+      </nav>
+      <img
+        role="button"
+        class="menu"
+        src="/images/icons8-hamburger-menu.png"
+        alt="hamburger-menu"
+      />
+      <img
+        role="button"
+        class="close-menu"
+        src="/images/icons8-close.png"
+        alt="close-menu"
+      />
+    </header>
+    <main>
+      <div>
+        <h1>Web Design & <span>Development</span> Course</h1>
+        <p>
+          Web design is a specialization of the design stream. <br />
+          They also use HTML, CSS, WYSIWYG editing software, mark up validators
+          etc, to create design elements.
+        </p>
+        <button>Join us</button>
+      </div>
+      <div id="form-container">
+        <form class="form" id="signin-form">
+          <button class="login-here">Login Here</button>
+          <input
+            type="email"
+            id="signin-email"
+            placeholder="Enter Email Here"
+            required
+          />
+          <input
+            type="text"
+            id="signin-password"
+            placeholder="Enter Password Here"
+          />
+          <button class="login">Login</button>
+          <div>
+            <p>Don't have an account?</p>
+            <p><a id="switch-to-signup" href="#">Sign Up</a> here</p>
+            <p>Log in With</p>
+          </div>
+          <div id="signin-errors"></div>
+        </form>
+        <form id="signup-form" class="form" style="display: none">
+          <button class="login-here">Sign Up Here</button>
+          <input
+            type="text"
+            id="signup-username"
+            placeholder="Enter Username"
+          />
+          <input
+            type="email"
+            id="signup-email"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="password"
+            id="signup-password1"
+            placeholder="Enter Password"
+          />
+          <input
+            type="password"
+            id="signup-password2"
+            placeholder="Confirm Password"
+          />
+          <button type="submit" class="login">Sign Up</button>
+          <div>
+            <p>Already have an account?</p>
+            <p><a href="#" id="switch-to-signin">Sign In</a> here</p>
+          </div>
+          <div id="signup-errors"></div>
+        </form>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
